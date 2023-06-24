@@ -1,0 +1,24 @@
+h1{
+    background: purple;
+    color: aquamarine;
+}
+
+.paragrath1{
+    background: plum;
+    font-size: 32pt;
+    color: blue;
+}
+
+.paragrath2{
+    border: 10px solid yellow;
+    border-radius: 15px;
+    font-size: 24pt;
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+
+.paragrath3{
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: Arial;
+}
