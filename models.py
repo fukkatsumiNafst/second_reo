@@ -27,3 +27,14 @@ class Adv(models.Model):
 
     def __str__(self) -> str:
         return f"Advertisements(id = {self.id}, title = {self.title}, price = {self.price})"
+    
+
+    @admin.display(description='дата обновления')
+    def updated_date(self):
+        if self.updated_at.date() == timezone.now().date():
+            updated_time = self.updated_at.time().strftime('%H:%M:%S')
+            return format_html(
+                '<span style="color:green; font-weight: bold"></span>',
+                updated_time
+            )
+        return self.updated_at.strftime('%d.%m.%Y at %H:%M:%S')
