@@ -5,8 +5,8 @@ from django.db.models.query import QuerySet
 # Register your models here.
 
 class AdvAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'description', 'auction', 'created_at', 'updated_at']
-    list_filter = ['auction', 'created_at', 'price']
+    list_display = ['id', 'user', 'title', 'description', 'price', 'created_date', 'updated_date', 'auction', 'image']
+    list_filter = ['auction', 'created_at']
     actions = ['make_action_as_false', 'make_action_as_true']
     fieldsets = (
         ('общие'{
